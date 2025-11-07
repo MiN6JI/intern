@@ -12,7 +12,7 @@ git commit -m "Changes"
 git push origin main
 </pre>
 
-### ⚠️ Branch Usage Policy
+### 3️⃣ Branch Usage Policy
 
 - Do **not** work directly on the `main` branch.
 - Each developer must work on their **own branch** (e.g., `rutuja`, `madhavi`, `devanshu`, etc.).
