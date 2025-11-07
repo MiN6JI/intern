@@ -15,7 +15,7 @@ git push origin main
 ### ⚠️ Branch Usage Policy
 
 - Do **not** work directly on the `main` branch.
-- Each developer must work on their **own branch** (e.g., `rutuja`, `rahul`, `neha`, etc.).
+- Each developer must work on their **own branch** (e.g., `rutuja`, `madhavi`, `devanshu`, etc.).
 - Commit and push changes only to your assigned branch.
 - Create a **Pull Request** to merge your branch into `main` after review.
 
