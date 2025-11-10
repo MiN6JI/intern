@@ -13,19 +13,22 @@ body {
   font-weight: 600px;
   font-size: 28px;
 }
+
 #container h1 {
   color: rgb(0, 0, 0);
   text-align: center;
   margin-bottom: 40px;
   font-size: 40px;
+  font-weight: 800;
 }
+
 #container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 1350px;
-  height: 500px;
+  width: 80vw;
+  height: 65vh;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
   flex-wrap: wrap;
@@ -34,9 +37,10 @@ body {
   padding: 50px;
   margin: 60px auto;
 }
+
 .box {
   margin: 10px;
-  width: 150px;
+  width: 200px;
 }
 
 .box h3 {
@@ -47,7 +51,8 @@ body {
 }
 
 .box p {
-  color: #171515;
+  font-size: 20px;
+  color: rgb(114, 114, 113);
   justify-content: space-around;
 }
 
