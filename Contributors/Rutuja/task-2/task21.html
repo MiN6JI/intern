@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<style>
+     *{
+             margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+    body {
+    background: #f3f3f3;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    width: 400px;
+    height:550px;
+    
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    padding:18px;
+    margin: 40px auto;
+    overflow: hidden;
+    background: #fff;
+}
+
+.card-top {
+    position: relative;
+    height: 400px;
+    background: url('virat.jpg') center/cover no-repeat;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        120deg,
+        rgba(0, 102, 255, 0.7),
+        rgba(156, 0, 200, 0.8)
+    );
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.content h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.content p {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px;
+    
+}
+
+.social a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: gray;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.btn {
+    padding: 12px 25px;
+    border: 2px solid #fff;
+    background: transparent;
+    border-radius: 23px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.card-bottom {
+    background: linear-gradient(120deg, #3b82f6, #9333ea);
+    padding:20px 10px;
+    text-align: center;
+    color: white;
+}
+
+.card-bottom h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.card-bottom p {
+    margin: 5px 0 18px;
+    opacity: 0.9;
+}
+
+.card-bottom .social a {
+    background: transparent;
+    color:grey;
+    margin-bottom: 30px;
+
+}
+
+</style>
+</head>
+<body>
+    <div class="card">
+    <div class="card-top">
+        <div class="overlay"></div>
+
+        <div class="content">
+            <h2>virat Kohali</h2>
+            <p>Indian Cricketer</p>
+
+            <div class="social">
+             <a href="#"><i class="fab fa-facebook"></i></a>
+       <a href="#"><i class="fab fa-linkedin"></i></a>
+       <a href="#"><i class="fab fa-dribbble"></i></a>
+       
+            </div>
+
+            <button class="btn">View details</button>
+        </div>
+    </div>
+
+    <div class="card-bottom">
+        <h3>Virat Kohali</h3>
+        <p>Indian Cricketer</p>
+
+        <div class="social">
+           <a href="#"><i class="fab fa-facebook"></i></a>
+       <a href="#"><i class="fab fa-linkedin"></i></a>
+       <a href="#"><i class="fab fa-dribbble"></i></a>
+    
+        </div>
+    </div>
+</div>
+</body>
+</html>
