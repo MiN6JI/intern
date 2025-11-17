@@ -16,7 +16,6 @@ body {
   overflow: hidden;
 }
 
-/* Background Image */
 .profile-card .bg {
   width: 100%;
   height: 100%;
@@ -24,7 +23,6 @@ body {
   filter: brightness(70%);
 }
 
-/* Gradient Overlay */
 .overlay {
   position: absolute;
   inset: 0;
@@ -32,7 +30,6 @@ body {
   opacity: 0.82;
 }
 
-/* Content on top */
 .content {
   position: absolute;
   top: 50%;
@@ -53,7 +50,6 @@ body {
   opacity: 0.9;
 }
 
-/* Social Icons */
 .icons {
   display: flex;
   justify-content: center;
@@ -73,7 +69,6 @@ body {
   font-size: 18px;
 }
 
-/* Button */
 .view-btn {
   padding: 10px 26px;
   background: transparent;
