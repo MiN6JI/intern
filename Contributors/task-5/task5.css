@@ -15,7 +15,7 @@ body{
     gap: 20px;
 }
 
-/* LEFT BIG IMAGE BLOCK */
+
 .left-box{
     width: 70%;
     height: 90vh;
@@ -52,7 +52,7 @@ body{
     opacity: 0.9;
 }
 
-/* Vertical line separator */
+
 .separator{
     width: 2px;
     height: 18px;
@@ -67,7 +67,7 @@ body{
     letter-spacing: 3px;
 }
 
-/* RIGHT SECTION */
+
 .right-box{
     width: 30%;
     display: flex;
