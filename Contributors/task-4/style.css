@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body
+{
+    background: #f4f7fa;
+    padding: 30px;
+}
+.container
+{
+ max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    gap:25px;
+     flex-wrap: wrap;
+}
+.card
+{
+    width:360px;
+    background: white;
+    border-radius: 18x;
+    border: 1px solid white;
+    padding:15px;
+    box-shadow: 0px 2px 20px rgba(0,0,0,0.3);
+    transition:0.4s ease;
+}
+.card img
+{
+    width:100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.tag
+{
+    display: inline-block;
+    padding:5px 12px;
+    margin-top: 15px;
+    background-color:#e0edff;
+    color: blue;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.title
+{
+    margin-top: 14px;
+    text-transform: capitalize;
+    color:black;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+    
+}
+.desc
+{
+    margin-top: 10px;
+    color:grey;
+    font-size: 15px;
+    line-height: 1.1em;
+}
+.author
+{
+    margin-top:15px;
+    display:flex;
+    align-items: center;
+    
+}
+.author img
+{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.author div
+{
+    margin-left: 10px;
+}
+.author h5
+{
+    font-size: 18px;
+    color:black;
+}
+.author p
+{
+    font-size: 12px;
+    color:#777;
+}
+
