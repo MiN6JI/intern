@@ -10,7 +10,7 @@
       color: #333;
     }
 
-    /* NAVBAR */
+    
     header {
       background: #0d6efd;
       padding: 20px 80px;
@@ -36,7 +36,7 @@
       cursor: default;
     }
 
-    /* HERO */
+   
     .hero {
       background: #0d6efd;
       padding: 80px;
@@ -78,7 +78,7 @@
       border-radius: 16px;
     }
 
-    /* FEATURES */
+   
     .features {
       padding: 60px 80px;
       display: grid;
@@ -91,7 +91,7 @@
       margin-bottom: 10px;
     }
 
-    /* ABOUT */
+  
     .about {
       padding: 80px;
       display: grid;
@@ -114,7 +114,6 @@
       margin-bottom: 10px;
     }
 
-    /* SERVICES */
     .services {
       background: #0d6efd;
       padding: 80px;
@@ -137,7 +136,6 @@
       text-align: left;
     }
 
-    /* STATS */
     .stats {
       padding: 80px;
       display: grid;
@@ -159,7 +157,6 @@
       text-align: center;
     }
 
-    /* TEAM */
     .team {
       padding: 80px;
       text-align: center;
@@ -177,7 +174,6 @@
       border-radius: 16px;
     }
 
-    /* TESTIMONIAL */
     .testimonial {
       background: #0d6efd;
       color: #fff;
@@ -199,7 +195,6 @@
       border-radius: 16px;
     }
 
-    /* BLOG */
     .blog {
       padding: 80px;
       text-align: center;
@@ -217,7 +212,6 @@
       border-radius: 16px;
     }
 
-    /* FOOTER */
     footer {
       background: #081a3a;
       color: #fff;
