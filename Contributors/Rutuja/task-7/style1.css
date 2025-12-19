@@ -100,60 +100,63 @@ nav ul li a.active {
     padding: 8px 15px;
     border-radius: 5px;
 }
-
-
-   .hero
-{
-    margin-top: 10px;
-   background:#eef7f2;
-  padding:30px 0;
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #f5f7fa;
+  padding: 30px;
 }
+
 .hero-inner {
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .hero-text {
-    
-    margin-left: 60px;
-    
+  width: 50%;
 }
 
 .hero-text h1 {
-    font-size: 55px;
-    font-weight: 800;
-    margin-bottom: 20px;
+  font-size: 48px;
+  margin-bottom: 20px;
 }
 
 .hero-text p {
-    margin-bottom: 40px;
-    font-size: 28px;
-    color: #555;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
 }
 
 .btn {
-    background: #25a55f;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 5px;
-    display:inline-block;
-    margin-right: 20px;
-    margin-bottom: 10px;
+  display: inline-block;
+  padding: 12px 30px;
+  background: #1e3cff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-.hotline span {
-    margin-top: 10px;
-    color: #25a55f;
-    font-weight: 700;
+.hotline {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+.hero-image {
+  width: 45%;
+  text-align: right;
 }
 
 .hero-image img {
-    width:800px;
-    height:900px;
-    object-fit: cover;
-    margin-right: 30px;
+  width: 100%;
+  max-width: 800px;
+  height:500px;
 }
+
 .services {
     padding: 60px 0;
 }
@@ -613,6 +616,8 @@ cursor:pointer;
     border-radius: 6px;
     overflow: hidden;
     margin-top: 40px;
+     margin-bottom: 0;
+    padding-bottom: 0;
 }
 .meeting-section img
 {
@@ -661,29 +666,38 @@ cursor:pointer;
 }
 
 .logo-strip img{
-    display: inline-block;      
-    margin: 0 10px;              
-    vertical-align: middle;      
-    height: 40px;  
-    margin-left: 30px;              
-}
+     width: 80px;          
+    height: 40px;         
+    margin: 0 15px;
+    vertical-align: middle;
+    object-fit: contain; 
+}   
+
 .logo-strip h3{
 display:inline-block;
 margin-right: 20px;
+vertical-align: middle;
 }
-
+.logo-strip img.demo {
+    width: 70px;
+    height: 35px;
+}
 
    .footer {
        background: #222;
-   bb color: #fff;
+      color: #fff;
       padding: 40px 0;
+      padding-top: 0;
+
     }
 
     .footer-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      gap: 20px;
+      gap: 10px;
+      text-align: center;
+      
     }
 
 .footer-left .logo {
@@ -712,6 +726,7 @@ margin-right: 20px;
 .footer-links h3 {
     color: #fff;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .contact-item {
@@ -749,6 +764,7 @@ margin-right: 20px;
 
 .footer-links h3 {
     margin-bottom: 10px;
+    margin-top: 10px;
 
 }
 
@@ -781,5 +797,6 @@ margin-right: 20px;
 }
 
  
+  
 
-
+    
