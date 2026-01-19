@@ -1,0 +1,308 @@
+:root {
+  --font-primary: "Inter", sans-serif;
+
+  --color-primary: #0a8a55;
+  --color-secondary: #4caf84;
+
+  --color-bg-main: #f9f6f1;
+  --color-bg-alt: #ffffff;
+
+  --color-text-primary: #2e2e2e;
+  --color-text-secondary: #6f6f6f;
+
+  --color-accent: #d9a441;
+
+  --color-border: #e2e2e2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .container {
+  max-width: 100%;
+  margin: 0;
+  padding: 15px 40px;
+}
+
+
+.logo {
+  height: 45px;
+  width: auto;
+  display: block;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #2e7d32;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+}
+
+/* Background image */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 2;
+}
+
+/* Text above image */
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+}
+
+
+.btn {
+  background: #fff;
+  color: #2e7d32;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #e8f5e9;
+}
+
+/* About Section 50-50 Layout */
+.about {
+  padding: 60px 20px;
+  background-color: #f1f8f4;
+}
+
+.about-content-wrapper {
+  display: flex;            
+  flex-direction: row;      
+  align-items: center;      
+  gap: 40px;               
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;          
+}
+
+/* Left Image */
+.about-image {
+  flex: 0 0 45%;           
+}
+
+.about-image img {
+  width: 100%;          
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;    
+  display: block;
+}
+
+
+/* Right Text */
+.about-text {
+  flex: 1;                
+}
+
+.about-text h2 {
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* Responsive Adjustment */
+@media (max-width: 768px) {
+  .about-content-wrapper {
+    flex-direction: column; 
+    text-align: center;
+  }
+
+  .about-image {
+    flex: 1 1 100%;
+  }
+
+  .about-text {
+    flex: 1 1 100%;
+  }
+}
+
+/* Products Section */
+.products {
+  padding: 60px 20px;
+  background: #f9f6f1;
+  text-align: center;
+}
+
+.products h2 {
+  color: #2e7d32;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.product-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.products-btn {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.products-btn .btn {
+  display: inline-block;
+  background: #fff;
+  color: #2e7d32;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.cta-section {
+  background-color: #f1f8f4; 
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  color: #2e7d32;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.cta-content p {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #2e7d32;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #256528;
+}
+
+
+
+/* Footer */
+.footer {
+  background: #2e7d32;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
