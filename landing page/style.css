@@ -29,7 +29,7 @@ body {
 
 /* Header */
 .header {
-  background: #ffffff;
+  background: var(--color-bg-alt);
   border-bottom: 1px solid #ddd;
 }
 
