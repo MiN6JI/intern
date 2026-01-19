@@ -255,6 +255,44 @@ nav a:hover {
   font-weight: bold;
   text-decoration: none;
 }
+.cta-section {
+  background-color: #f1f8f4; /* soft green background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  color: #2e7d32;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.cta-content p {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #2e7d32;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #256528;
+}
 
 
 
