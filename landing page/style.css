@@ -107,6 +107,7 @@ nav a:hover {
 
 .hero h2 {
   font-size: 2.5rem;
+   line-height: 1.2; 
   margin-bottom: 15px;
 }
 
@@ -131,7 +132,7 @@ nav a:hover {
 /* About Section 50-50 Layout */
 .about {
   padding: 60px 20px;
-  background-color: #f1f8f4;
+  background-color: #f9f6f1;
 }
 
 .about-content-wrapper {
@@ -248,8 +249,8 @@ nav a:hover {
 
 .products-btn .btn {
   display: inline-block;
-  background: #fff;
-  color: #2e7d32;
+  background: #2e7d32;
+  color: #fff;
   padding: 12px 30px;
   border-radius: 25px;
   font-weight: bold;
@@ -298,11 +299,63 @@ nav a:hover {
 
 /* Footer */
 .footer {
-  background: #2e7d32;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
+    background-color: #2e7d32;
+    color: #fff;
+    padding: 40px 20px 10px;
+    margin-top: 50px;
 }
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.footer-section h3,
+.footer-logo {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 6px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover,
+.social-links a:hover {
+    color: #9ef5c3;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 13px;
+}
+
 
 
 
