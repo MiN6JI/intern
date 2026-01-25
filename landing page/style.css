@@ -175,7 +175,7 @@ nav a:hover {
   margin-bottom: 15px;
 }
 
-/* Responsive Adjustment */
+
 @media (max-width: 768px) {
   .about-content-wrapper {
     flex-direction: column; 
@@ -411,7 +411,6 @@ nav a:hover {
   }
 }
 
-/* Desktop Nav */
 .nav-links {
   display: flex;
   align-items: center;
@@ -424,7 +423,6 @@ nav a:hover {
   font-weight: 500;
 }
 
-/* Desktop Nav */
 .nav-links {
   display: flex;
   align-items: center;
@@ -437,12 +435,10 @@ nav a:hover {
   font-weight: 500;
 }
 
-/* Hide hamburger on desktop */
 .menu-icon {
   display: none;
 }
 
-/* Mobile styles */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
