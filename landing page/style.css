@@ -49,7 +49,6 @@ body {
   padding: 15px 40px;
 }
 
-
 .logo {
   height: 45px;
   width: auto;
@@ -59,12 +58,12 @@ body {
 nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #333;
+  color: var(--color-text-primary);
   font-weight: 500;
 }
 
 nav a:hover {
-  color: #2e7d32;
+  color: var(--color-primary);
 }
 
 /* Hero */
@@ -89,7 +88,6 @@ nav a:hover {
   z-index: 1;
 }
 
-
 .hero::after {
   content: "";
   position: absolute;
@@ -108,7 +106,7 @@ nav a:hover {
 
 .hero h2 {
   font-size: 2.5rem;
-   line-height: 1.2; 
+  line-height: 1.2;
   margin-bottom: 15px;
 }
 
@@ -116,18 +114,19 @@ nav a:hover {
   margin-bottom: 25px;
 }
 
-
 .btn {
-  background: #fff;
-  color: #2e7d32;
+  background: var(--color-accent);
+  color: var(--color-bg-alt);
   padding: 12px 25px;
   text-decoration: none;
   border-radius: 25px;
   font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background: #e8f5e9;
+  background: var(--color-primary);
+  transition: background-color 0.3s ease-out;
 }
 
 /* About Section 50-50 Layout */
@@ -137,36 +136,35 @@ nav a:hover {
 }
 
 .about-content-wrapper {
-  display: flex;            
-  flex-direction: row;      
-  align-items: center;      
-  gap: 40px;               
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
   max-width: 1100px;
   margin: auto;
-  flex-wrap: wrap;          
+  flex-wrap: wrap;
 }
 
 /* Left Image */
 .about-image {
-  flex: 0 0 45%;           
+  flex: 0 0 45%;
 }
 
 .about-image img {
-  width: 100%;          
+  width: 100%;
   height: 100%;
   border-radius: 12px;
-  object-fit: cover;    
+  object-fit: cover;
   display: block;
 }
 
-
 /* Right Text */
 .about-text {
-  flex: 1;                
+  flex: 1;
 }
 
 .about-text h2 {
-  color: #2e7d32;
+  color: var(--color-primary);
   margin-bottom: 20px;
 }
 
@@ -176,10 +174,9 @@ nav a:hover {
   margin-bottom: 15px;
 }
 
-
 @media (max-width: 768px) {
   .about-content-wrapper {
-    flex-direction: column; 
+    flex-direction: column;
     text-align: center;
   }
 
@@ -200,7 +197,7 @@ nav a:hover {
 }
 
 .products h2 {
-  color: #2e7d32;
+  color: var(--color-primary);
   margin-bottom: 40px;
 }
 
@@ -232,7 +229,7 @@ nav a:hover {
 }
 
 .product-card h3 {
-  color: #2e7d32;
+  color: var(--color-primary);
   margin-bottom: 10px;
 }
 
@@ -249,32 +246,62 @@ nav a:hover {
 
 .products-btn .btn {
   display: inline-block;
-  background: #2e7d32;
-  color: #fff;
+  background: var(--color-primary);
+  color: var(--color-bg-main);
   padding: 12px 30px;
   border-radius: 25px;
   font-weight: bold;
   text-decoration: none;
 }
+
+.products-btn .btn:hover {
+  background: var(--color-accent);
+}
+
+/* CTA  */
 .cta-section {
-  background-color: #f1f8f4; 
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
   padding: 60px 20px;
   text-align: center;
 }
 
+.cta-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.cta-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.731);
+  z-index: 2;
+}
+
 .cta-content {
+  position: relative;
+  z-index: 3;
   max-width: 700px;
   margin: 0 auto;
 }
 
 .cta-content h2 {
-  color: #2e7d32;
+  color: var(--color-bg-main);
   font-size: 32px;
   margin-bottom: 15px;
 }
 
 .cta-content p {
-  color: #444;
+  color: var(--color-bg-alt);
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 30px;
@@ -283,7 +310,7 @@ nav a:hover {
 .cta-btn {
   display: inline-block;
   padding: 12px 30px;
-  background-color: #2e7d32;
+  background-color: var(--color-accent);
   color: #fff;
   text-decoration: none;
   font-size: 16px;
@@ -291,72 +318,71 @@ nav a:hover {
   transition: background-color 0.3s ease;
 }
 .cta-btn:hover {
-  background-color: #256528;
+  background-color: var(--color-primary);
 }
 
 /* Footer */
 .footer {
-    background-color: #2e7d32;
-    color: #fff;
-    padding: 40px 20px 10px;
-    margin-top: 50px;
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 40px 20px 10px;
+  margin-top: 50px;
 }
 
 .footer-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
 }
 
 .footer-section h3,
 .footer-logo {
-    color: #fff;
-    margin-bottom: 10px;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
 .footer-section p {
-    font-size: 14px;
-    line-height: 1.6;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .footer-section ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .footer-section ul li {
-    margin-bottom: 6px;
+  margin-bottom: 6px;
 }
 
 .footer-section ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
 }
 
 .footer-section ul li a:hover,
 .social-links a:hover {
-    color: #9ef5c3;
+  color: #9ef5c3;
 }
 
 .social-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .footer-bottom {
-    text-align: center;
-    border-top: 1px solid rgba(255,255,255,0.2);
-    margin-top: 20px;
-    padding-top: 10px;
-    font-size: 13px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 13px;
 }
 
 .footer {
   margin-top: 0;
 }
-
 
 #menu-toggle {
   display: none;
@@ -372,7 +398,7 @@ nav a:hover {
 .menu-icon span {
   height: 3px;
   width: 25px;
-  background: #2e7d32;
+  background: var(--color-primary);
   margin: 4px 0;
 }
 
@@ -382,7 +408,7 @@ nav a:hover {
   left: 0;
   height: 100vh;
   width: 100%;
-  background: #2e7d32; 
+  background: var(--color-primary);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -396,7 +422,6 @@ nav a:hover {
   color: white;
   font-size: 26px;
   margin: 15px 0;
-  
 }
 #menu-toggle:checked ~ .mobile-menu {
   transform: translateX(0);
@@ -420,19 +445,7 @@ nav a:hover {
 .nav-links a {
   margin-left: 20px;
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-}
-
-.nav-links a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
+  color: var(--color-text-primary);
   font-weight: 500;
 }
 
@@ -449,5 +462,3 @@ nav a:hover {
     display: flex;
   }
 }
-
-

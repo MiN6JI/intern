@@ -4,52 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About us page</title>
-    <link rel="stylesheet" href="style1.css">
-</head>
-<body>
-   <header class="header">
-      <div class="nav-container">
-        <!-- Logo LEFT -->
-        
-         <a href="index.html" class="logo-link">
-         <img src="images/logos/eco-station-transparent.png"
-          alt="EcoStation Logo"
-          class="logo">
-          </a>
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img src="images/logos/eco-station-transparent.png" class="logo" />
 
-
-        <!-- Nav RIGHT -->
-        <nav>
+        <nav class="nav-links">
           <a href="index.html">Home</a>
-          <a href="products.html" ></a>
-         <a href="about.html" class="active">About</a>
+          <a href="about.html">About Us</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <input type="checkbox" id="menu-toggle" />
+
+        <label for="menu-toggle" class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav class="mobile-menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="products.html">Products</a>
           <a href="contact.html">Contact</a>
         </nav>
       </div>
     </header>
 
-        
-
     <section class="about-banner">
-    <img src="images/others/about us.webp" alt="About Us">
-    <div class="overlay"></div>
-        <div class="title">
-            <h2>About Us</h2>
-            <p>
-             We create sustainable stationery products that reduce waste and promote
-        eco-friendly habits. Our mission is to make your daily tasks enjoyable
-        while caring for the planet.
-         </p>
-         </div>
+      <img src="images/others/about us.webp" alt="About Us" class="about-bg" />
+      <div class="header-content">
+        <h2>About Us</h2>
+        <p>
+          We create sustainable stationery products that reduce waste and
+          promote eco-friendly habits. Our mission is to make your daily tasks
+          enjoyable while caring for the planet.
+        </p>
+      </div>
     </section>
+
     <section class="about">
       <div class="about-content">
         <div class="left-content">
-            <h2>How EcoStation Started</h2>
-           <p>
-         EcoStation was born from the belief that sustainability should fit naturally into daily life. Recognizing the lack of simple, reliable eco-friendly options, we set out to create
-         a space where responsible products and mindful living come together.
-         </p>
+          <h2>How EcoStation Started</h2>
+          <p>
+            EcoStation was born from the belief that sustainability should fit
+            naturally into daily life. Recognizing the lack of simple, reliable
+            eco-friendly options, we set out to create a space where responsible
+            products and mindful living come together.
+          </p>
         </div>
         <div class="right-content">
           <img src="images/others/hero bg.webp" alt="About Us" />
@@ -57,47 +64,53 @@
       </div>
     </section>
     <section class="feature">
-        <div class="feature-card">
-            <h3>Our Vision</h3>
-             <p>
-        To create a future where sustainable living is a natural part of everyday life, not a conscious compromise making
-         eco-friendly choices the norm rather than the alternative.
-         </p>
-        </div>
-         <div class="feature-card">
-            <h3>Our Mission</h3>
-             <p>
-          To provide thoughtfully curated, eco-friendly products that combine practicality, quality, and responsible design which
-           helps individuals adopt sustainable habits with ease and confidence.
-         </p>
-        </div>
-         <div class="feature-card">
-            <h3>Our Goals</h3>
-             <p>
-           To simplify sustainable living by offering reliable, accessible solutions that reduce environmental impact
-            while supporting modern lifestyles and long-term positive change
-         </p>
-        </div>
-    </section>
-    <section class="cta">
-      <div class="cta-text">
-        <div class="left-text">
-            <h2>Be Part of the EcoStation Journey.</h2>
-            <p>Discover eco-friendly products designed to
-                 support conscious living and everyday sustainability.
-        
-         </p>
-        </div>
-        <div class="right-text">
-          <a href="contact.html" class="cta-btn">Contact Us</a>
-        </div>
+      <div class="feature-card">
+        <h3>Our Vision</h3>
+        <p>
+          To create a future where sustainable living is a natural part of
+          everyday life, not a conscious compromise making eco-friendly choices
+          the norm rather than the alternative.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3>Our Mission</h3>
+        <p>
+          To provide thoughtfully curated, eco-friendly products that combine
+          practicality, quality, and responsible design which helps individuals
+          adopt sustainable habits with ease and confidence.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3>Our Goals</h3>
+        <p>
+          To simplify sustainable living by offering reliable, accessible
+          solutions that reduce environmental impact while supporting modern
+          lifestyles and long-term positive change
+        </p>
       </div>
     </section>
-  <footer class="footer">`
+
+    <section class="cta-section">
+      <img
+        src="images/others/landing-img.jpg"
+        alt="CTA Background"
+        class="cta-bg"
+      />
+      <div class="cta-content">
+        <h2>Start Living Sustainably Today</h2>
+        <p>
+          Explore eco-friendly products designed to make responsible choices
+          simple and impactful.
+        </p>
+        <a href="contact.html" class="cta-btn">Contact Us</a>
+      </div>
+    </section>
+
+    <footer class="footer">
       <div class="footer-container">
         <div class="footer-section">
           <h2 class="footer-logo">EcoStation</h2>
-          <p>Eco-friendly stationery for<br> a sustainable future</p>
+          <p>Eco-friendly stationery for a sustainable future</p>
         </div>
 
         <div class="footer-section">
@@ -116,18 +129,19 @@
           <p>+91 98765 43210</p>
           <p>ecostation@gmail.com</p>
         </div>
-          <div class="footer-section">
+
+        <div class="footer-section">
           <h3>Follow Us</h3>
           <p class="social-links">
             <a href="#">Instagram</a> | <a href="#">Facebook</a> |
             <a href="#">Twitter</a>
           </p>
         </div>
-         </div>
+      </div>
 
       <div class="footer-bottom">
         <p>© 2026 EcoStation | All rights reserved</p>
       </div>
     </footer>
-</body>
+  </body>
 </html>

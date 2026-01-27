@@ -7,30 +7,44 @@
   </head>
   <body>
     <header class="header">
-      <div class="nav-container">
-        <!-- Logo LEFT -->
-        <img
-          src="images/logos/eco-station-transparent.png"
-          alt="EcoStation Logo"
-          class="logo"
-        />
+      <div class="container">
+        <img src="images/logos/eco-station-transparent.png" class="logo" />
 
-        <!-- Nav RIGHT -->
-        <nav>
+        <nav class="nav-links">
           <a href="index.html">Home</a>
-          <a href="products.html" class="active">Products</a>
-          <a href="about.html">About</a>
+          <a href="about.html">About Us</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <input type="checkbox" id="menu-toggle" />
+
+        <label for="menu-toggle" class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav class="mobile-menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="products.html">Products</a>
           <a href="contact.html">Contact</a>
         </nav>
       </div>
     </header>
+
     <section class="product-banner">
-      <img src="Images/others/background-image-2.jpeg" alt="Contact Us" />
-
-      <div class="overlay"></div>
-
-      <div class="title">
+      <img
+        src="images/others/background-image-2.jpeg"
+        alt="Products"
+        class="product-bg"
+      />
+      <div class="header-content">
         <h2>Our Products</h2>
+        <p>
+          Thoughtfully designed sustainable stationery for a greener lifestyle.
+        </p>
       </div>
     </section>
 
@@ -43,7 +57,7 @@
       <div class="products-grid">
         <!-- Product 1 -->
         <div class="product-card">
-          <img src="Images/products/diary.png" alt="Eco diary" />
+          <img src="Images/products/diary.webp" alt="Eco diary" />
           <h3>Eco diary</h3>
           <p>Made from recycled paper, perfect for daily notes.</p>
         </div>
@@ -89,6 +103,22 @@
           <h3>Eco sharpner</h3>
           <p>Compact sharpner made from eco-conscious materials.</p>
         </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <img
+        src="images/others/landing-img.jpg"
+        alt="CTA Background"
+        class="cta-bg"
+      />
+      <div class="cta-content">
+        <h2>Start Living Sustainably Today</h2>
+        <p>
+          Explore eco-friendly products designed to make responsible choices
+          simple and impactful.
+        </p>
+        <a href="contact.html" class="cta-btn">Contact Us</a>
       </div>
     </section>
 

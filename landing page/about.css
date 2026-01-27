@@ -112,7 +112,7 @@ nav a:hover {
 
 /* Banner  */
 
-.product-banner {
+.about-banner {
   position: relative;
   height: 300px;
   display: flex;
@@ -123,7 +123,7 @@ nav a:hover {
   color: #fff;
 }
 
-.product-bg {
+.about-bg {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -132,7 +132,7 @@ nav a:hover {
   z-index: 1;
 }
 
-.product-banner::after {
+.about-banner::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -157,63 +157,74 @@ nav a:hover {
   margin-bottom: 25px;
 }
 
-/* Products  */
-
-.products-section {
+/* About  */
+.about {
   padding: 60px 20px;
-  background-color: #faf7f2;
-  text-align: center;
+  background-color: #f9f6f1;
 }
 
-.products-section h1 {
-  font-size: 32px;
-  color: #2e7d32;
-  margin-bottom: 10px;
-}
-
-.subtitle {
-  color: #555;
-  margin-bottom: 40px;
-}
-
-/* Products Grid */
-.products-grid {
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
   max-width: 1100px;
   margin: auto;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  flex-wrap: wrap;
 }
 
-/* Product Card */
-.product-card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease;
+.left-content {
+  flex: 1;
 }
 
-.product-card:hover {
-  transform: translateY(-6px);
+.left-content h2 {
+  color: var(--color-primary);
+  margin-bottom: 20px;
 }
 
-.product-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: contain;
+.left-content p {
+  color: var(--color-text-secondary);
+  line-height: 1.8;
   margin-bottom: 15px;
 }
 
-.product-card h3 {
-  color: #2e7d32;
-  margin-bottom: 8px;
+.right-content {
+  flex: 0 0 45%;
 }
 
-.product-card p {
-  color: #666;
+.right-content img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Aims */
+
+.feature {
+  padding: 50px 20px;
+  background-color: #f9f6f1;
+  display: flex;
+  gap: 20px;
+}
+
+.feature-card {
+  flex: 1;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+.feature-card h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+.feature-card p {
   font-size: 14px;
+  color: var(--color-text-primary);
+  margin-top: 10px;
 }
 
 /* CTA  */
