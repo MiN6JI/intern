@@ -1,8 +1,66 @@
-/* Margin and padding make sure you do it zero  */
+:root {
+  --font-primary: "Inter", sans-serif;
+
+  --color-primary: #0a8a55;
+  --color-secondary: #4caf84;
+
+  --color-bg-main: #f9f6f1;
+  --color-bg-alt: #ffffff;
+
+  --color-text-primary: #2e2e2e;
+  --color-text-secondary: #6f6f6f;
+
+  --color-accent: #d9a441;
+
+  --color-border: #e2e2e2;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+}
 
 .header {
   background: #ffffff;
   border-bottom: 1px solid #ddd;
+}
+.product-banner {
+  margin-top: 0;
+  height: 320px; /* 👈 CONTROL HEIGHT HERE */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Banner Image */
+.product-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps width, crops height */
+  display: block;
+}
+
+/* Dark overlay (optional but recommended) */
+.product-banner .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Centered text */
+.product-banner .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.product-banner .title h2 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 /* Correct wrapper */
@@ -95,12 +153,65 @@ nav a:hover {
   font-size: 14px;
 }
 
-/* ================= FOOTER ================= */
-
+/* Footer */
 .footer {
   background-color: #2e7d32;
-  color: #ffffff;
+  color: #fff;
+  padding: 40px 20px 10px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.footer-section h3,
+.footer-logo {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 6px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover,
+.social-links a:hover {
+  color: #9ef5c3;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-bottom {
   text-align: center;
-  padding: 15px;
-  margin-top: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 13px;
+}
+
+.footer {
+  margin-top: 0;
 }
