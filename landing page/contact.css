@@ -79,7 +79,7 @@ nav a.active {
 
 .contact-banner {
   margin-top: 0;
-  height: 320px; /* 👈 CONTROL HEIGHT HERE */
+  height: 320px;
   position: relative;
   overflow: hidden;
 }
@@ -118,6 +118,7 @@ nav a.active {
 /* CONTACT CONTAINER */
 .contact-container {
   max-width: 1100px;
+  padding: 50px 20px;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
