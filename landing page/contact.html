@@ -9,18 +9,29 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <div class="nav-container">
-        <img
-          src="images/logos/eco-station-transparent.png"
-          alt="EcoStation Logo"
-          class="logo"
-        />
+      <div class="container">
+        <img src="images/logos/eco-station-transparent.png" class="logo" />
 
-        <nav>
+        <nav class="nav-links">
           <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
           <a href="products.html">Products</a>
-          <a href="about.html">About</a>
-          <a href="contact.html" class="active">Contact</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <input type="checkbox" id="menu-toggle" />
+
+        <label for="menu-toggle" class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav class="mobile-menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
         </nav>
       </div>
     </header>
