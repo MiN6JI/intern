@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ Section</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .faq-container {
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .faq-item {
+      background: #fff;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      padding: 15px;
+      cursor: pointer;
+      font-weight: bold;
+      background: #007bff;
+      color: #fff;
+    }
+
+    .faq-answer {
+      padding: 15px;
+      display: none;
+      background: #f9f9f9;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>FAQS</h1>
+  <div class="faq-container" id="faqContainer"></div>
+
+  <script>
+    const faqs = [
+      {
+        id: 1,
+        question: "What services do you provide?",
+        answer:
+          "We offer fabrication, machining, construction support, and complete industrial engineering solutions tailored to your project needs.",
+      },
+      {
+        id: 2,
+        question: "How can I request a quotation?",
+        answer:
+          "You can request a quotation by filling out the contact form on our website or by directly reaching out to our support team with your project details.",
+      },
+      {
+        id: 3,
+        question: "Do you handle large-scale industrial projects?",
+        answer:
+          "Yes, we specialize in both small and large-scale industrial projects, ensuring quality, safety, and timely delivery at every stage.",
+      },
+      {
+        id: 4,
+        question: "What industries do you serve?",
+        answer:
+          "We serve manufacturing, construction, energy, infrastructure, and other engineering-driven industries requiring precision and reliability.",
+      },
+      {
+        id: 5,
+        question: "How do you ensure quality and safety?",
+        answer:
+          "Our team follows strict quality control procedures, certified safety standards, and continuous inspections throughout the project lifecycle.",
+      },
+      {
+        id: 6,
+        question: "Can you customize solutions for specific requirements?",
+        answer:
+          "Absolutely. We design and deliver customized engineering and fabrication solutions based on your technical and operational requirements.",
+      },
+    ];
+
+    const container = document.getElementById("faqContainer");
+
+    faqs.forEach(faq => {
+      const faqItem = document.createElement("div");
+      faqItem.classList.add("faq-item");
+
+      faqItem.innerHTML = `
+        <div class="faq-question">${faq.question}</div>
+        <div class="faq-answer">${faq.answer}</div>
+      `;
+
+      faqItem.querySelector(".faq-question")
+        .addEventListener("click", () => {
+          faqItem.classList.toggle("active");
+        });
+
+      container.appendChild(faqItem);
+    });
+  </script>
+
+</body>
+</html>
