@@ -4,8 +4,9 @@ Before starting, make sure Git is installed on your computer.
 
 ### 2️⃣ Clone the Repo
 
-<pre>git clone "https://github.com/MiN6JI/intern.git"
+<pre>
 cd intern
+git clone "https://github.com/MiN6JI/intern.git"
 git checkout branch-name
 git add .
 git commit -m "Changes"
