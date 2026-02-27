@@ -115,6 +115,8 @@ p { font-size: 14px;
 .hidden {
    display: none;
    }
-.image img { width: 200px;
+.image img {
+   width: 200px;
    border-radius: 8px; 
   }
+  
