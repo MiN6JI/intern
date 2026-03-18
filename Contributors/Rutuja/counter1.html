@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter limit 0 to 10</title>
+    <style>
+         body {
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-align: center;
+      margin-top: 40px;
+    }
+    h1 {
+      font-size: 40px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+      background-color:aqua;
+      color: black;
+
+    }
+    </style>
+</head>
+<body>
+    <h1 id="count">0</h1>
+    <button onClick="increaseCount()">INCREASE</button> 
+    <button onClick="decreaseCount()">DECREASE</button> 
+    <script>
+        let count=0;
+        function increaseCount()
+        {
+            if(count<10)
+        {
+            count++;
+           document.getElementById("count").innerText = count;
+        }
+        else
+        {
+            alert("Range 0 to 10");
+        }
+        }
+         function decreaseCount()
+        {
+            if(count>-10)
+        {
+            count--;
+            document.getElementById("count").innerText = count;
+        }
+        else
+        {
+            alert("Minimum limit -10");
+        }
+        }
+    </script>
+</body>
+</html>
