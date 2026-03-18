@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue Example</title>
+  <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+
+<div id="app">
+  <h1>{{ message }}</h1>
+  <button @click="changeMessage">Click Me</button>
+</div>
+
+<script>
+const { createApp } = Vue;
+
+createApp({
+  data() {
+    return {
+      message: "Hello Vue 👋"
+    }
+  },
+  methods: {
+    changeMessage() {
+      this.message = "Button Clicked 😄"
+    }
+  }
+}).mount("#app");
+</script>
+
+</body>
+</html>
