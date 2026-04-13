@@ -1,22 +1,25 @@
 <template>
-  <div id="app">
-    <RegisterForm />
-    <!-- <CounterApp /> -->
-    <!-- <HomePage /> -->
-    <!-- <Login /> -->
-  </div>
+<ToDo />
+//<SignUp />
 </template>
-
 <script>
-import RegisterForm from "./components/RegisterForm.vue";
+// import RegisterForm from "./components/RegisterForm.vue";
 // import CounterApp from "./components/CounterApp.vue";
+// import HomePage from "./components/HomePage.vue";
+// import Login from "./components/Login.vue";
+
+//import SignUp from './components/SignUp.vue'
+import ToDo from './components/ToDo.vue'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
-    RegisterForm,
-    // CounterApp
+    // RegisterForm,
+    // CounterApp,
+    // HomePage,
+    // Login,
+   // SignUp
+   ToDo
   }
-};
+}
 </script>
-
