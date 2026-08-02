@@ -11,7 +11,7 @@ const animals = [
     name: "Bear",
     spirit: "The bear is a symbol of strength and protection."
   },
-  {
+  {``
     img: "alpaca.png",
     id: 3,
     name: "Giraffe",
